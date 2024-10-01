@@ -15,7 +15,7 @@ import ParticipantBenefits from "./Faq";
 import ThemeCard from "./ThemeCards";
 import KeyThemes from "./Keydays";
 import DayAgenda from "./DayAgenda";
-import PricingCards from "./Pricing";
+import PricingCards from "./PricingCards/Pricing";
 
 const agendaItems1 = [
   {
@@ -130,44 +130,54 @@ export default function ConferenceLandingPage() {
         <AnimatedSection>
           <section
             id="hero"
-            className="bg-white text-[#141414] pt-12 pb-16 md:pb-32"
+            className="bg-white text-[#141414] pt-8 sm:pt-12 pb-16 sm:pb-20 md:pb-32"
           >
-            <div className="flex flex-row">
-              <img className="" src="/Clippathgroup.svg" alt="" />
-              <img src="" alt="" />
-            </div>
             <div className="container mx-auto px-4">
-              <div className="flex flex-col md:flex-row items-center justify-between">
-                <div className="md:w-1/2 mb-8 md:mb-0">
-                  <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-                    Конференция <br />
+              <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-16">
+                <div className="flex flex-col w-full lg:w-1/2">
+                  <div className="flex flex-row justify-between md:justify-start  gap-4 sm:gap-8 mb-8 sm:mb-12">
+                    <img
+                      className="h-8 sm:h-12"
+                      src="/Clippathgroup.svg"
+                      alt="Clip path group"
+                    />
+                    <img
+                      className="h-8 sm:h-12"
+                      src="/operators.svg"
+                      alt="Operators"
+                    />
+                    <img className="h-8 sm:h-12" src="/A.svg" alt="A" />
+                  </div>
+                  <p className="text-lg sm:text-xl md:text-2xl mb-2 font-semibold text-center md:text-left">
+                    6-7 ноября 2024
+                  </p>
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight text-left">
+                    Конференция <br className="hidden sm:inline" />
                     по маркетингу МКОС
                   </h1>
-                  <p className="text-lg md:text-xl mb-6 md:mb-8">
+                  <p className="text-base sm:text-lg md:text-xl mb-6 text-left">
                     Успешный опыт экспертов, практические советы, обсудим
                     последние тенденции и найдем новые пути развития бизнеса
                   </p>
-                  <p className="text-xl md:text-2xl mb-6 md:mb-8">
-                    6-7 ноября 2024
-                  </p>
-                  <div className="flex items-center space-x-4 mb-6 md:mb-8">
-                    <Video className="w-5 h-5 md:w-6 md:h-6" />
-                    <span className="text-base md:text-xl">
+                  <div className="flex items-center justify-start space-x-2 sm:space-x-4 mb-6">
+                    <Video className="w-5 h-5 sm:w-6 sm:h-6" />
+                    <span className="text-sm sm:text-base md:text-lg">
                       Онлайн через ZOOM и Телеграм-чат
                     </span>
                   </div>
-                  <div className="space-y-4 md:space-y-0 md:space-x-4 flex flex-col md:flex-row">
-                    <a href="/" className="btn-grad ">
+                  <div className="flex justify-start">
+                    <a
+                      href="/"
+                      className="btn-grad text-left px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
+                    >
                       Зарегистрироваться
                     </a>
                   </div>
                 </div>
-                <div className="md:w-1/2  relative mt-8 md:mt-0">
+                <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
                   <img
                     src="/mkos.png"
                     alt="Conference Illustration"
-                    width={550}
-                    height={550}
                     className="rounded-lg shadow-2xl w-full h-auto"
                   />
                 </div>
@@ -237,7 +247,7 @@ export default function ConferenceLandingPage() {
         </AnimatedSection>
 
         <AnimatedSection>
-          <section className="container mx-auto px-4">
+          <section className="container relative mb-14 z-50 mx-auto px-4">
             <h2 className="text-4xl text-center md:text-left md:text-5xl mb-10  font-bold">
               СТОИМОСТЬ УЧАСТИЯ
             </h2>
@@ -248,10 +258,10 @@ export default function ConferenceLandingPage() {
         <AnimatedSection>
           <section
             id="contact"
-            className="py-16 md:py-20 bg-white text-[#131313]"
+            className="relative z-10 py-16 md:py-20 bg-white text-[#131313]"
           >
             <img
-              className="absolute bottom-0 right-0 w-1/2 h-auto object-contain object-bottom-right z-10"
+              className="absolute bottom-0 right-0 w-[45%] h-auto object-contain object-bottom-right -z-10"
               src="/foot.png"
               alt=""
             />
@@ -263,7 +273,10 @@ export default function ConferenceLandingPage() {
                 Оставьте свои контакты в форме, чтобы мы могли связаться с вами
                 и помочь в выборе тарифа.
               </p>
-              <a href="" className="btn-grad w-1/4 text-lg">
+              <a
+                href=""
+                className="btn-grad inline-block w-full sm:w-auto px-8 py-3 text-sm md:text-lg text-center text-white uppercase rounded-full transition duration-500 bg-gradient-to-r from-[#0146f9] via-[#021b79] to-[#0146f9] bg-size-200 hover:bg-right-center"
+              >
                 ПРИНЯТЬ УЧАСТИЕ
               </a>
             </div>

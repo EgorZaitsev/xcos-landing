@@ -48,7 +48,7 @@ const pricingData = [
 
 export default function PricingCards() {
   return (
-    <div className="flex flex-wrap justify-center gap-6">
+    <div className="relative z-20 flex flex-wrap justify-center gap-6">
       {pricingData.map((plan, index) => (
         <div
           key={index}
