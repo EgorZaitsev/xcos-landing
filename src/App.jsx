@@ -73,7 +73,7 @@ const agendaItems2 = [
     number: "04",
     title: "DIGITAL ИНСТРУМЕНТЫ ДЛЯ B2B МАРКЕТИНГА",
     description:
-      "Как использовать CRM системы, email-рассылки и другие digital инструменты для привлечения и удержания корпоративных клиентов.",
+      "CRM системы и email-маркетинг для привлечения и удержания корпоративных клиентов",
   },
   {
     number: "05",
@@ -124,41 +124,6 @@ function AnimatedSection({ children, className }) {
 }
 
 export default function ConferenceLandingPage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [openFaqItem, setOpenFaqItem] = useState(null);
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    const smoothScroll = (e) => {
-      e.preventDefault();
-      const targetId = e.currentTarget.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-    };
-
-    const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach((link) => {
-      link.addEventListener("click", smoothScroll);
-    });
-
-    return () => {
-      links.forEach((link) => {
-        link.removeEventListener("click", smoothScroll);
-      });
-    };
-  }, []);
-
   return (
     <div className="bg-white text-[#141414] font-['Montserrat']">
       <main className="">
