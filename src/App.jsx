@@ -130,7 +130,7 @@ export default function ConferenceLandingPage() {
         <AnimatedSection>
           <section
             id="hero"
-            className="bg-white text-[#141414] pt-8 sm:pt-12 pb-16 sm:pb-20 md:pb-32"
+            className="bg-[#f1f1f1] rounded-b-[60px] text-[#141414] pt-8 sm:pt-12 pb-16 sm:pb-20 md:pb-32"
           >
             <div className="container mx-auto px-4">
               <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-16">
@@ -148,7 +148,7 @@ export default function ConferenceLandingPage() {
                     />
                     <img className="h-8 sm:h-12" src="/A.svg" alt="A" />
                   </div>
-                  <p className="text-lg sm:text-xl md:text-2xl mb-2 font-semibold text-center md:text-left">
+                  <p className="text-lg sm:text-xl md:text-2xl mb-2 font-semibold text-left">
                     6-7 ноября 2024
                   </p>
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight text-left">
@@ -197,7 +197,7 @@ export default function ConferenceLandingPage() {
                 </h2>
                 <div className="absolute -bottom-4 left-0 right-0 h-[2px] bg-[#141414]">
                   <svg
-                    className="absolute right-0 top-1/2 transform translate-x-full -translate-y-1/2"
+                    className="absolute right-1 top-1/2 transform translate-x-full -translate-y-1/2"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"

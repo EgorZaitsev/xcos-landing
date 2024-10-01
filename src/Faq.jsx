@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import KnowledgeBase from "./KnowledgeBase";
 
 const benefits = [
   {
@@ -32,9 +33,9 @@ export default function ParticipantBenefits() {
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mr-4">
             ЧТО ПОЛУЧАТ УЧАСТНИКИ
           </h2>
-          <div className="flex-grow self-end mb-2 h-[2px] bg-[#131313] relative">
+          <div className="flex-grow self-end mb-px h-[2px] bg-[#131313] relative">
             <svg
-              className="absolute right-0 top-1/2 transform translate-x-full -translate-y-1/2"
+              className="absolute hidden md:block right-1 top-1/2 transform translate-x-full -translate-y-1/2"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -44,7 +45,7 @@ export default function ParticipantBenefits() {
               <path
                 d="M0 10H18M18 10L10 2M18 10L10 18"
                 stroke="#131313"
-                strokeWidth="2"
+                strokeWidth="1.9"
               />
             </svg>
           </div>
@@ -59,6 +60,7 @@ export default function ParticipantBenefits() {
             </div>
           ))}
         </div>
+        <KnowledgeBase />
       </div>
     </section>
   );

@@ -24,7 +24,7 @@ export default function DayAgenda({ agendaItems, day }) {
                     : "xl:h-[370px] 2xl:h-[400px]"
                 }`}
               >
-                <div className="pl-24 md:pl-10 pb-4 sm:pb-[38px] border-r-[6px] sm:border-r-[11px] border-[#333]  ">
+                <div className="flex items-end justify-end pr-4 md:pl-10 md:pr-4 pb-4 sm:pb-[38px] border-r-[6px] sm:border-r-[11px] border-[#333]  ">
                   <img src={`/n${item.number}.svg`} alt="" />
                 </div>
                 <div className="pl-4 pt-2">
