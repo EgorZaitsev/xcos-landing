@@ -20,7 +20,7 @@ export default function DayAgenda({ agendaItems, day }) {
                 key={item.number}
                 className={`relative w-full xl:w-1/5 2xl:w-[290px] border-b-2 xl:border-b-0 xl:border-r-2 border-[#6a6a6a] pb-8 xl:pb-0 mb-8 xl:mb-0 ${
                   index % 2 !== 0
-                    ? "xl:mt-28 xl:h-[350px] 2xl:h-[400px]"
+                    ? "xl:mt-12 2xl:mt-28 xl:h-[350px] 2xl:h-[400px]"
                     : "xl:h-[370px] 2xl:h-[400px]"
                 }`}
               >

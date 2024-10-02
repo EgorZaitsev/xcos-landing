@@ -174,11 +174,11 @@ export default function ConferenceLandingPage() {
                     </a>
                   </div>
                 </div>
-                <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+                <div className=" lg:w-full  mt-8 lg:mt-0">
                   <img
                     src="/mkos.png"
                     alt="Conference Illustration"
-                    className="rounded-lg shadow-2xl w-full h-auto"
+                    className="rounded-[30px] shadow-2xl w-full h-auto"
                   />
                 </div>
               </div>
@@ -190,26 +190,13 @@ export default function ConferenceLandingPage() {
           <section id="benefits" className="py-16 md:py-24 bg-white">
             <div className="container mx-auto px-4">
               <div className="relative mb-12">
-                <h2 className="text-3xl md:text-5xl leading-[140%] md:leading-[140%] font-semibold text-gray-900 mb-4">
+                <h2 className="text-3xl md:text-5xl leading-[140%] md:leading-[140%] font-semibold text-gray-900 ">
                   ЦЕЛИ И ПРЕИМУЩЕСТВА
                   <br />
                   КОНФЕРЕНЦИИ
                 </h2>
-                <div className="absolute -bottom-4 left-0 right-0 h-[2px] bg-[#141414]">
-                  <svg
-                    className="absolute right-1 top-1/2 transform translate-x-full -translate-y-1/2"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 10H18M18 10L10 2M18 10L10 18"
-                      stroke="#141414"
-                      strokeWidth="2"
-                    />
-                  </svg>
+                <div className="">
+                  <img className="w-full" src="/Arrow.svg" alt="" />
                 </div>
               </div>
               <div className="">

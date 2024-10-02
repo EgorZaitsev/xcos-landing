@@ -57,7 +57,7 @@ export default function PricingCards() {
       {pricingData.map((plan, index) => (
         <CardContainer key={index}>
           <CardBody
-            className={` p-6 rounded-3xl ${
+            className={` px-12 p-6 rounded-3xl ${
               plan.featured
                 ? "bg-gradient-to-br from-[#001c66] to-[#0146f9] text-white"
                 : "bg-gray-100 text-gray-900"
@@ -65,23 +65,28 @@ export default function PricingCards() {
           >
             <CardItem
               translateZ="50"
-              className={`text-xl font-bold mb-1 ${
+              className={`text-xl font-bold mb-4 ${
                 plan.featured ? "text-white" : "text-blue-600"
               }`}
             >
               {plan.name}
+              <CardItem
+                translateZ="0"
+                className={`${
+                  plan.featured ? "text-white" : "text-[#141414]"
+                } font-normal text-sm mb-6`}
+              >
+                {plan.duration}
+              </CardItem>
             </CardItem>
-            <CardItem translateZ="60" className="text-sm mb-6">
-              {plan.duration}
-            </CardItem>
-            <CardItem translateZ="70" className="space-y-4 mb-6">
+            <CardItem translateZ="50" className=" space-y-6 mb-12">
               {plan.features.map((feature, featureIndex) => (
                 <React.Fragment key={featureIndex}>
                   <div className="flex items-center">
                     <div className="flex-grow">
                       <span className="text-sm">{feature.name}</span>
                     </div>
-                    <div className="flex-shrink-0 justify-center items-center">
+                    <div className="pl-12 justify-center items-center">
                       {feature.included ? (
                         <MotionCircleCheck
                           initial={{ scale: 0 }}
@@ -116,11 +121,11 @@ export default function PricingCards() {
                 </React.Fragment>
               ))}
             </CardItem>
-            <CardItem translateZ="80" className="text-2xl font-bold mb-2">
+            <CardItem translateZ="50" className="text-3xl font-bold mb-2">
               {plan.price}
             </CardItem>
             {plan.note && (
-              <CardItem translateZ="90" className="text-xs text-gray-500">
+              <CardItem translateZ="50" className="text-xs text-gray-500">
                 {plan.note}
               </CardItem>
             )}

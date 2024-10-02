@@ -23,6 +23,10 @@ const benefits = [
     description:
       "Когда вы поймете как работать с направлением, то у вас появятся силы, чтобы реализовать планы и достигать результатов.",
   },
+  {
+    title: "ПРИ ПОКУПКЕ ТАРИФА ПРОФИ ИЛИ МАКСИМАЛЬНЫЙ",
+    description: "aboba",
+  },
 ];
 
 export default function ParticipantBenefits() {
@@ -30,24 +34,11 @@ export default function ParticipantBenefits() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex items-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mr-4">
+          <h2 className="text-4xl 2xl:w-full md:w-1/2 w-full md:text-5xl font-bold text-gray-900 mr-4">
             ЧТО ПОЛУЧАТ УЧАСТНИКИ
           </h2>
-          <div className="flex-grow self-end mb-px h-[2px] bg-[#131313] relative">
-            <svg
-              className="absolute hidden md:block right-1 top-1/2 transform translate-x-full -translate-y-1/2"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 10H18M18 10L10 2M18 10L10 18"
-                stroke="#131313"
-                strokeWidth="1.9"
-              />
-            </svg>
+          <div className="hidden lg:block self-end w-full relative">
+            <img className="w-full" src="/Arrow.svg" alt="" />
           </div>
         </div>
         <div className="space-y-8">
