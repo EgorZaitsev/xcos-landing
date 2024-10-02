@@ -271,59 +271,6 @@ export default function ConferenceLandingPage() {
           </section>
         </AnimatedSection>
       </main>
-
-      <footer className="bg-gray-900 relative z-50 text-white py-8 md:py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-xl md:text-2xl font-semibold mb-4">
-                X-COS Conference
-              </h3>
-              <p className="text-sm md:text-base">
-                Ведущая онлайн-конференция для профессионалов в области
-                телекоммуникаций.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg md:text-xl font-semibold mb-4">
-                Контакты
-              </h3>
-              <p className="text-sm md:text-base">Email: info@x-cos.ru</p>
-              <p className="text-sm md:text-base">Телефон: +11111111111</p>
-            </div>
-            <div>
-              <h3 className="text-lg md:text-xl font-semibold mb-4">
-                Следите за нами
-              </h3>
-              <div className="flex space-x-4">
-                <a
-                  href="#"
-                  className="text-sm md:text-base text-white hover:text-[#7005FF] transition duration-300"
-                >
-                  Telegram канал
-                </a>
-                <a
-                  href="#"
-                  className="text-sm md:text-base text-white hover:text-[#7005FF] transition duration-300"
-                >
-                  Telegram
-                </a>
-                <a
-                  href="#"
-                  className="text-sm md:text-base text-white hover:text-[#7005FF] transition duration-300"
-                >
-                  Youtube
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="mt-8 md:mt-12 text-center">
-            <p className="text-sm md:text-base">
-              &copy; 2024 X-COS Conference. Все права защищены.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
