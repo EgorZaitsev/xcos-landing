@@ -130,12 +130,12 @@ export default function ConferenceLandingPage() {
         <AnimatedSection>
           <section
             id="hero"
-            className="bg-[#f1f1f1] rounded-b-[60px] text-[#141414] pt-8 sm:pt-12 pb-16 sm:pb-20 md:pb-32"
+            className="bg-[#f1f1f1]  rounded-b-[60px] text-[#141414] pt-8 sm:pt-12 pb-16 sm:pb-20 md:pb-32"
           >
-            <div className="container mx-auto px-4">
-              <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-16">
-                <div className="flex flex-col w-full lg:w-1/2">
-                  <div className="flex flex-row justify-between md:justify-start  gap-4 sm:gap-8 mb-8 sm:mb-12">
+            <div className=" md:mx-auto lg:mx-20  px-4 ">
+              <div className="flex flex-col lg:flex-row w-full justify-between gap-8 lg:gap-32">
+                <div className="flex flex-col w-full  lg:w-1/2">
+                  <div className="flex flex-row  justify-between md:justify-start md:mb-32 pt-2 gap-4 sm:gap-8 mb-8 sm:mb-12">
                     <img
                       className="h-8 sm:h-12"
                       src="/Clippathgroup.svg"
@@ -148,22 +148,23 @@ export default function ConferenceLandingPage() {
                     />
                     <img className="h-8 sm:h-12" src="/A.svg" alt="A" />
                   </div>
-                  <p className="text-lg sm:text-xl md:text-2xl mb-2 font-semibold text-left">
-                    6-7 ноября 2024
-                  </p>
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight text-left">
-                    Конференция <br className="hidden sm:inline" />
-                    по маркетингу МКОС
-                  </h1>
-                  <p className="text-base sm:text-lg md:text-xl mb-6 text-left">
-                    Успешный опыт экспертов, практические советы, обсудим
-                    последние тенденции и найдем новые пути развития бизнеса
-                  </p>
-                  <div className="flex items-center justify-start space-x-2 sm:space-x-4 mb-6">
-                    <Video className="w-5 h-5 sm:w-6 sm:h-6" />
-                    <span className="text-sm sm:text-base md:text-lg">
-                      Онлайн через ZOOM и Телеграм-чат
-                    </span>
+                  <div>
+                    <p className="text-lg sm:text-xl md:text-2xl mb-2 font-semibold text-left">
+                      6-7 ноября 2024
+                    </p>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-16 leading-tight text-left">
+                      Конференция по&nbsp;маркетингу МКОС
+                    </h1>
+                    <p className="text-base sm:text-lg md:text-xl mb-6 text-left">
+                      Успешный опыт экспертов, практические советы, обсудим
+                      последние тенденции и найдем новые пути развития бизнеса
+                    </p>
+                    <div className="flex items-center justify-start space-x-2 sm:space-x-4 mb-6 lg:mb-16">
+                      <Video className="w-5 h-5 sm:w-6 sm:h-6" />
+                      <span className="text-sm sm:text-base md:text-lg">
+                        Онлайн через ZOOM и Телеграм-чат
+                      </span>
+                    </div>
                   </div>
                   <div className="flex justify-start">
                     <a
@@ -174,7 +175,7 @@ export default function ConferenceLandingPage() {
                     </a>
                   </div>
                 </div>
-                <div className=" lg:w-full  mt-8 lg:mt-0">
+                <div className="flex justify-center items-center  lg:w-3/4   mt-8 lg:mt-0">
                   <img
                     src="/mkos.png"
                     alt="Conference Illustration"
@@ -261,8 +262,8 @@ export default function ConferenceLandingPage() {
                 и помочь в выборе тарифа.
               </p>
               <a
-                href=""
-                className="btn-grad inline-block w-full sm:w-auto px-8 py-3 text-sm md:text-lg text-center text-white uppercase rounded-full transition duration-500 bg-gradient-to-r from-[#0146f9] via-[#021b79] to-[#0146f9] bg-size-200 hover:bg-right-center"
+                href="/"
+                className="btn-grad inline-block w-full sm:w-auto px-8 py-3 text-sm md:text-lg  "
               >
                 ПРИНЯТЬ УЧАСТИЕ
               </a>

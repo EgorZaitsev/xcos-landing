@@ -24,8 +24,14 @@ const benefits = [
       "Когда вы поймете как работать с направлением, то у вас появятся силы, чтобы реализовать планы и достигать результатов.",
   },
   {
-    title: "ПРИ ПОКУПКЕ ТАРИФА ПРОФИ ИЛИ МАКСИМАЛЬНЫЙ",
-    description: "aboba",
+    title: (
+      <>
+        ПРИ ПОКУПКЕ ТАРИФА <span className="text-[#141414]">ПРОФИ&quot;</span>{" "}
+        ИЛИ <span className="text-[#141414]">МАКСИМАЛЬНЫЙ&quot;</span>
+      </>
+    ),
+    description:
+      "Тарифы «Профи» и «Максимальный» предоставляют полный пакет документов, который охватывает все аспекты работы с клиентами: входящие и исходящие потоки, допродажи, удержание и профилактика оттока. Эти решения помогут вам систематизировать процессы и увеличить конверсию.",
   },
 ];
 
@@ -43,7 +49,7 @@ export default function ParticipantBenefits() {
         </div>
         <div className="space-y-8">
           {benefits.map((benefit, index) => (
-            <div key={index} className="border-b-2 border-[#131313] pb-8">
+            <div key={index} className="border-b-2 border-[#141414] pb-8">
               <h3 className="text-xl font-semibold text-[#0146f9] mb-2">
                 {benefit.title}
               </h3>
