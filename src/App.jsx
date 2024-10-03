@@ -1,16 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
-import {
-  Menu,
-  X,
-  ArrowUpRight,
-  ChevronDown,
-  ChevronUp,
-  CheckCircle,
-  Video,
-} from "lucide-react";
-import PricingSection from "./Pricing";
-import ConferenceTopics from "./ConferenceTopics";
+import { Video } from "lucide-react";
 import ParticipantBenefits from "./Faq";
 import ThemeCard from "./ThemeCards";
 import KeyThemes from "./Keydays";
@@ -180,7 +170,7 @@ export default function ConferenceLandingPage() {
                   <img
                     src="/mkos.png"
                     alt="Conference Illustration"
-                    className="rounded-[30px] shadow-2xl w-full h-auto"
+                    className="rounded-[30px]  shadow-sm md:shadow-2xl w-full h-auto"
                   />
                 </div>
               </div>

@@ -52,7 +52,7 @@ export default function KnowledgeBase() {
               БАЗА ЗНАНИЙ
             </motion.h2>
             <motion.p
-              className="text-md text-center lg:text-left md:mb-10 md:text-xl max-w-[950px]"
+              className="text-md text-center lg:text-left  xl:mb-0 md:mb-10 md:text-xl max-w-[950px]"
               variants={textVariants}
             >
               База знаний Школы Операторов - сборник полезных материалов для
@@ -63,7 +63,7 @@ export default function KnowledgeBase() {
           </div>
         </div>
         <div className="relative w-full h-[300px] md:h-[450px] 2xl:h-[700px]">
-          <div className="flex justify-center md:justify-end absolute -bottom-0 xs:-bottom-16 sm:-bottom-52 md:-bottom-32 lg:-bottom-44 xl:-bottom-64 lg:-right-0  2xl:-right-52  ">
+          <div className="flex justify-center md:justify-end absolute -bottom-10 xs:-bottom-12 sm:-bottom-52 md:-bottom-32 lg:-bottom-44 xl:-bottom-64 lg:-right-0  2xl:-right-52">
             <img
               className="w-full scale-[2] xs:scale-[1.8] sm:scale-150 lg:scale-100 "
               src={
