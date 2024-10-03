@@ -53,7 +53,7 @@ export const CardContainer = ({ children, className, containerClassName }) => {
 export const CardBody = ({ children, className }) => {
   return (
     <div
-      className={`flex flex-col justify-start pt-16 w-[320px] sm:w-[350px] h-[550px] [transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] ${className}`}
+      className={`flex flex-col justify-start pt-16 w-[320px] sm:w-[350px] h-[480px] md:h-[550px] [transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] ${className}`}
     >
       {children}
     </div>

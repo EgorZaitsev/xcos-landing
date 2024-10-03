@@ -130,7 +130,7 @@ export default function ConferenceLandingPage() {
         <AnimatedSection>
           <section
             id="hero"
-            className="bg-[#f1f1f1]  rounded-b-[60px] text-[#141414] pt-8 sm:pt-12 pb-16 sm:pb-20 md:pb-32"
+            className="bg-[#f1f1f1]  rounded-b-[60px] text-[#141414] pt-8 sm:pt-12 pb-4 sm:pb-10 md:pb-16"
           >
             <div className=" md:mx-auto lg:mx-20  px-4 ">
               <div className="flex flex-col lg:flex-row w-full justify-between gap-8 lg:gap-32">
@@ -162,13 +162,14 @@ export default function ConferenceLandingPage() {
                     <div className="flex items-center justify-start space-x-2 sm:space-x-4 mb-6 lg:mb-16">
                       <Video className="w-5 h-5 sm:w-6 sm:h-6" />
                       <span className="text-sm sm:text-base md:text-lg">
-                        Онлайн через ZOOM и Телеграм-чат
+                        Онлайн через ZOOM и Telegram
                       </span>
                     </div>
                   </div>
                   <div className="flex justify-start">
                     <a
-                      href="/"
+                      href="https://clck.ru/3DbqfF"
+                      target="_blank"
                       className="btn-grad text-left px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
                     >
                       Зарегистрироваться
@@ -246,10 +247,10 @@ export default function ConferenceLandingPage() {
         <AnimatedSection>
           <section
             id="contact"
-            className="relative z-10 py-16 md:py-20 bg-white text-[#131313]"
+            className="relative overflow-clip z-10 py-16 md:py-10 bg-white text-[#131313]"
           >
             <img
-              className="absolute bottom-0 right-0 w-[45%] h-auto object-contain object-bottom-right -z-10"
+              className="absolute  hidden md:block -bottom-2 right-0 w-[45%] h-auto object-contain object-bottom-right -z-10"
               src="/foot.png"
               alt=""
             />
@@ -262,7 +263,8 @@ export default function ConferenceLandingPage() {
                 и помочь в выборе тарифа.
               </p>
               <a
-                href="/"
+                href="https://clck.ru/3DbqfF"
+                target="_blank"
                 className="btn-grad inline-block w-full sm:w-auto px-8 py-3 text-sm md:text-lg  "
               >
                 ПРИНЯТЬ УЧАСТИЕ

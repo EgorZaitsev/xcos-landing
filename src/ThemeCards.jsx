@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 
 const benefits = [
   {
@@ -7,14 +9,14 @@ const benefits = [
     image: "/1.png",
   },
   {
+    number: "3",
+    title: "Обсуждение актуальных\u00a0проблем и решений",
+    image: "/3.png",
+  },
+  {
     number: "2",
     title: "Обмен опытом и\u00a0знаниями",
     image: "/2.png",
-  },
-  {
-    number: "3",
-    title: `Обсуждение актуальных\u00a0проблем и решений`,
-    image: "/3.png",
   },
 ];
 
@@ -79,8 +81,30 @@ const Card3D = ({ children, className, image }) => {
   );
 };
 
+const EmptyCard = () => {
+  return (
+    <div className="bg-[#f1f1f1] rounded-2xl h-64 transition-transform duration-300 ease-in-out hover:scale-105" />
+  );
+};
+
 export default function ThemeCard() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const gridItems = [benefits[0], null, benefits[1], null, benefits[2], null];
+  const mobileItems = [benefits[0], benefits[2], benefits[1]];
 
   return (
     <section className="">
@@ -100,11 +124,10 @@ export default function ThemeCard() {
           )}
         </div>
         <div className="md:hidden space-y-6">
-          {benefits.map((benefit, index) => (
+          {mobileItems.map((benefit, index) => (
             <Card3D key={index} image={benefit.image}>
               <span className="text-4xl font-bold mb-2">{benefit.number}</span>
               <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
-              <p className="text-sm text-gray-300">{benefit.subtitle}</p>
             </Card3D>
           ))}
         </div>
@@ -112,9 +135,3 @@ export default function ThemeCard() {
     </section>
   );
 }
-
-const EmptyCard = () => {
-  return (
-    <div className="bg-[#f1f1f1] rounded-2xl h-64 transition-transform duration-300 ease-in-out hover:scale-105" />
-  );
-};

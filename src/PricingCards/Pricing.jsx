@@ -79,7 +79,10 @@ export default function PricingCards() {
                 {plan.duration}
               </CardItem>
             </CardItem>
-            <CardItem translateZ="50" className=" space-y-6 mb-12">
+            <CardItem
+              translateZ="50"
+              className=" space-y-2 sm:space-y-6  mb-8 md:mb-12"
+            >
               {plan.features.map((feature, featureIndex) => (
                 <React.Fragment key={featureIndex}>
                   <div className="flex items-center">
