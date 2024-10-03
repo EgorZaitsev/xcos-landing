@@ -124,7 +124,7 @@ export default function PricingCards() {
                 </React.Fragment>
               ))}
             </CardItem>
-            <CardItem translateZ="50" className="text-3xl font-bold mb-2">
+            <CardItem translateZ="50" className="text-3xl font-bold md:mb-2">
               {plan.price}
             </CardItem>
             {plan.note && (

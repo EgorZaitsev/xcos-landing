@@ -226,7 +226,7 @@ export default function ConferenceLandingPage() {
         </AnimatedSection>
 
         <AnimatedSection>
-          <section className="container relative mb-14 z-50 mx-auto px-4">
+          <section className="container relative z-40 mx-auto px-4">
             <h2 className="text-4xl text-center md:text-left md:text-5xl mb-10  font-bold">
               СТОИМОСТЬ УЧАСТИЯ
             </h2>
@@ -237,10 +237,10 @@ export default function ConferenceLandingPage() {
         <AnimatedSection>
           <section
             id="contact"
-            className="relative overflow-clip z-10 py-16 md:py-10 bg-white text-[#131313]"
+            className="relative z-50 py-16 md:py-10 bg-white text-[#131313]"
           >
             <img
-              className="absolute  hidden md:block -bottom-2 right-0 w-[45%] h-auto object-contain object-bottom-right -z-10"
+              className="absolute hidden md:block -bottom-32 right-0 w-[45%] h-auto object-contain object-bottom-right z-50"
               src="/foot.png"
               alt=""
             />
