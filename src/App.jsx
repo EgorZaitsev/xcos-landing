@@ -160,7 +160,7 @@ export default function ConferenceLandingPage() {
                     <a
                       href="https://clck.ru/3DbqfF"
                       target="_blank"
-                      className="btn-grad text-left px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
+                      className="btn-grad-hero text-left px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
                     >
                       Зарегистрироваться
                     </a>
